@@ -18,6 +18,6 @@
     "start-backend": "cd backend && yarn start",
     "build-frontend": "cd frontend && yarn build",
     "build-backend": "cd backend && yarn build",
-    "test-frontend": "cd frontend && yarn test"
+    "test-backend": "cd backend && yarn test"
   }
 }
