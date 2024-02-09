@@ -1,0 +1,20 @@
+{
+  "name": "nilfheim",
+  "private": true,
+  "author": "Shiyamii",
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend"
+    ],
+    "nohoist": [
+      "**/@nestjs",
+      "**/react"
+    ]
+  },
+  "scripts": {
+    "start-frontend": "cd frontend && yarn start",
+    "start-backend": "cd backend && yarn start"
+  }
+}
