@@ -15,6 +15,9 @@
   },
   "scripts": {
     "start-frontend": "cd frontend && yarn start",
-    "start-backend": "cd backend && yarn start"
+    "start-backend": "cd backend && yarn start",
+    "build-frontend": "cd frontend && yarn build",
+    "build-backend": "cd backend && yarn build",
+    "test-frontend": "cd frontend && yarn test"
   }
 }
