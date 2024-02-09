@@ -20,7 +20,7 @@
     "build:frontend": "cd frontend && yarn build",
     "build:backend": "cd backend && yarn build",
     "build": "concurrently \"yarn build-frontend\" \"yarn build-backend\"",
-    "test-backend": "cd backend && yarn test",
+    "test:backend": "cd backend && yarn test",
     "format": "prettier --write \"*/{public,src,test}/**/*.{js,jsx,ts,tsx,html,css,json}\""
   },
   "devDependencies": {
