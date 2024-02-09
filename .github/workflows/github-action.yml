@@ -31,16 +31,16 @@ jobs:
         run: yarn build-frontend
 
       - name: Archive frontend production artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: frontend-build
-          path: frontend/build
+          path: frontend/dist
 
       - name: Archive backend production artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: backend-build
-          path: backend/build
+          path: backend/dist
 
   test:
     name: Test
