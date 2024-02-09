@@ -30,11 +30,17 @@ jobs:
       - name: Build frontend project
         run: yarn build-frontend
 
-      - name: Archive production artifacts
+      - name: Archive frontend production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: .
+          name: frontend-build
+          path: frontend/build
+
+      - name: Archive backend production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: backend-build
+          path: backend/build
 
   test:
     name: Test
@@ -44,16 +50,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy data from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: build
-          path: .
-
       - name: Install Node.js and npm
         uses: actions/setup-node@v4
         with:
           node-version: "20.11.0"
+
+      - name: Install dependencies
+        run: yarn install
+
 
       - name: Run tests
         run: yarn test-backend
