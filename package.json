@@ -10,7 +10,13 @@
     ],
     "nohoist": [
       "**/@nestjs",
-      "**/react"
+      "**/nestjs",
+      "**/react",
+      "**/react-dom",
+      "**/@nextui-org",
+      "**/tailwindcss",
+      "**/tailwind-merge",
+      "**/tailwind-variants"
     ]
   },
   "scripts": {
