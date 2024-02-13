@@ -5,7 +5,10 @@
   height: 100vh;
   width: 100vw;
   font-weight: 100;
-  background: radial-gradient(#1d0038, #05000a);
+  background: radial-gradient(
+    hsl(var(--nextui-background-secondary)),
+    hsl(var(--nextui-background))
+  );
   -webkit-overflow-y: hidden;
   -moz-overflow-y: hidden;
   -o-overflow-y: hidden;
@@ -16,12 +19,12 @@
   animation: fadeIn 1 1s ease-out;
 }
 
-.light {
+.background-light {
   position: absolute;
   width: 0;
   opacity: 0.75;
-  background-color: white;
-  box-shadow: #e9f1f1 0 0 20px 2px;
+  background-color: hsl(var(--nextui-primary));
+  box-shadow: hsl(var(--nextui-primary)) 0 0 20px 2px;
   top: 100vh;
   bottom: 0;
   left: 0;

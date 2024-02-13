@@ -1,3 +1,4 @@
+import { nextUiConfig } from './nextui.config.ts';
 import { nextui } from '@nextui-org/react';
 
 /** @type {import('tailwindcss').Config} */
@@ -11,5 +12,5 @@ export default {
     extend: {},
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [nextui(nextUiConfig)],
 };
