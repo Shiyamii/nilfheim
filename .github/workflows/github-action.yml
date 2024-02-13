@@ -25,10 +25,10 @@ jobs:
         run: yarn install
 
       - name: Build backend project
-        run: yarn build-backend
+        run: yarn build:backend
 
       - name: Build frontend project
-        run: yarn build-frontend
+        run: yarn build:frontend
 
       - name: Archive frontend production artifacts
         uses: actions/upload-artifact@v4
@@ -60,4 +60,4 @@ jobs:
 
 
       - name: Run tests
-        run: yarn test-backend
+        run: yarn test:backend
