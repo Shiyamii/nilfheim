@@ -24,6 +24,10 @@
     "start-backend": "cd backend && yarn start",
     "build-frontend": "cd frontend && yarn build",
     "build-backend": "cd backend && yarn build",
-    "test-backend": "cd backend && yarn test"
+    "test-backend": "cd backend && yarn test",
+    "format": "prettier --write */*.{js,jsx,ts,tsx,json,scss,html}"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
   }
 }
