@@ -6,7 +6,7 @@ import React from 'react';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider>
+    <NextUIProvider className="min-h-screen flex flex-col">
       <NextThemesProvider attribute="class" defaultTheme="dark">
         {children}
       </NextThemesProvider>
