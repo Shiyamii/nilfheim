@@ -4,8 +4,9 @@ export const nextUiConfig = {
       colors: {
         primary: '#1d0038',
         secondary: '#7828c8',
-        background: '#e8ccff',
-        'background-secondary': '#d2a1fa',
+        background: '#edd6ff',
+        'background-secondary': '#f8eeff',
+        'background-bar': '#7828c8',
       },
     },
     dark: {
@@ -14,6 +15,7 @@ export const nextUiConfig = {
         secondary: '#1d0038',
         background: '#05000a',
         'background-secondary': '#1d0038',
+        'background-bar': '#8a48cc',
       },
     },
   },
